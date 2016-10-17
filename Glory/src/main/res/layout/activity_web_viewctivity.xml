@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.yeahgenius.hy.gloryboom.activity.WebViewctivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_webview_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/Toolbar.Base"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_web_viewctivity"/>
+
+    <!-- 这是一个浮动按钮。由于FloatingActionButton是重写ImageView的，所有FloatingActionButton拥有
+        ImageView的一切属性。
+
+          属性介绍：
+              app:backgroundTint : FAB的背景色。
+              app:elevation      ：FAB的阴影效果。
+              app:rippleColor    ：设置涟漪的颜色，默认是由背景色生成的暗色调，可以自己指定。
+              app:pressedTranslationZ  ：FAB动画效果，在它被按下的时候阴影就会增大。-->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_webview_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:elevation="6dp"
+        android:src="@mipmap/ic_favorite_outline_white_24dp"/>
+
+</android.support.design.widget.CoordinatorLayout>

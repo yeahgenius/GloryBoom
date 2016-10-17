@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottomBarItemOne"
+        android:icon="@mipmap/ic_local_library_white_24dp"
+        android:title="运动知识" />
+    <item
+        android:id="@+id/bottomBarItemTwo"
+        android:icon="@mipmap/ic_directions_walk_white_24dp"
+        android:title="计步器" />
+    <item
+        android:id="@+id/bottomBarItemThree"
+        android:icon="@mipmap/ic_location_city_white_24dp"
+        android:title="附近场馆" />
+    <item
+        android:id="@+id/bottomBarItemFour"
+        android:icon="@mipmap/ic_my_library_music_white_24dp"
+        android:title="听音乐" />
+</menu>

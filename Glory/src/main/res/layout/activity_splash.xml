@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.yeahgenius.hy.gloryboom.activity.SplashActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳过 5"
+        android:id="@+id/timer_splashActivity"
+        android:background="@null"
+        android:textColor="@color/colorTextPrimary"
+        android:layout_alignParentRight="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <com.hanks.htextview.HTextView
+            android:id="@+id/htv_splash_slogan_text"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            app:animateType="anvil"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

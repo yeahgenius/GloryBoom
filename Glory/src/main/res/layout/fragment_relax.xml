@@ -1,0 +1,23 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bb_darkBackgroundColor"
+    tools:context="com.yeahgenius.hy.gloryboom.fragment.RelaxFragment">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipyrefreshlayout_relax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview_relax"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/colorDivider"
+            android:dividerHeight="10dp"/>
+    </android.support.v4.widget.SwipeRefreshLayout>>
+
+</FrameLayout>

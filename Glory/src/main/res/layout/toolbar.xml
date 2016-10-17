@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 属性解析：
+        app:theme：指定Toolbar的样式，包括ActionbarToggle和popupMenu的指示图标颜色
+        app:popupTheme：指定popupMenu溢出后的样式
+        app:title:    指定Toolbar中主Title的内容 -->
+
+<!-- app:layout_scrollFlags的意思是：
+        设置的layout_scrollFlags有如下几种选项：
+            scroll: 所有想滚动出屏幕的view都需要设置这个flag- 没有设置这个flag的view将被固定在屏幕顶部。
+            enterAlways: 这个flag让任意向下的滚动都会导致该view变为可见，启用快速“返回模式”。
+            enterAlwaysCollapsed: 当你的视图已经设置minHeight属性又使用此标志时，你的视图只能以最小高度
+            进入，只有当滚动视图到达顶部时才扩大到完整高度。
+            exitUntilCollapsed: 当视图会在滚动时，它一直滚动到设置的minHeight时完全隐藏。
+
+     需要注意的是，后面两种模式基本只有在CollapsingToolbarLayout才有用，
+     而前面两种模式基本是需要一起使用的，也就是说，这些flag的使用场景，基本已经固定了。-->
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorPrimary"
+    android:minHeight="?attr/actionBarSize"
+    app:theme="@style/Toolbar.Base"
+    app:popupTheme="@style/AppTheme.PopupOverlay"
+    />
